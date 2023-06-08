@@ -1,15 +1,10 @@
-.boss{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
+.d-item{
+    height: 500px;
 }
-.boost{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
-    margin: 25px auto;
-    flex-wrap: wrap;
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
-.card-body{
-    text-align: center;
-}
+.d-item{}
+.d-item{}
