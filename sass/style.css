@@ -315,7 +315,9 @@ footer {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400 ease;
 }
-
+.index-p, .index-h2{
+  color:rgb(240, 248, 255)
+}
 .inicio {
   background-image: url("../assets/img/fondo-inicio/fondo.jpeg");
   background-position: center bottom;
