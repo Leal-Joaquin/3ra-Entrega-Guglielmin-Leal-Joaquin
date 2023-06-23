@@ -1,5 +1,5 @@
-footer{
-    background-color: #bd8a3e;
+footer {
+    background-color: rgb(189, 138, 62);
     width: 100%;
     position: relative;
     bottom: 0;
@@ -10,12 +10,15 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-.logo-footer{
+
+.logo-footer {
     height: 80px;
     margin-bottom: 1rem;
     border-radius: 35px;
 }
-.social-icons-container, .footer-menu-container{
+
+.social-icons-container,
+.footer-menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,49 +27,47 @@ footer{
     margin-bottom: 1rem;
     font-size: 40px;
 }
-.social-icon{
+
+.social-icon {
     height: 50px;
     width: 50px;
-    border-radius:50px ;
-    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    border: 1px solid rgb(242, 242, 242);
     background-image: url(../assets/img/icon-instagram.png);
     background-position: center;
     background-size: 48%;
     background-repeat: no-repeat;
     margin: 1rem;
+
+    &:hover {
+        background-color: rgb(18, 18, 18);
+        filter: invert(1);
+    }
 }
-.social-icon:hover{
-    background-color: #121212;
-    filter: invert(1);
-}
-.social-icon:nth-of-type(2){
-background-image: url(../assets/img/icon-facebook.png);
-}
-.social-icon:nth-of-type(3){
-    background-image: url(../assets/img/icon-linkedin.png);
-}
-.social-icon:nth-of-type(4){
-    background-image: url(../assets/img/icon-twitter.png);
-}
-.footer-menu-container{
+
+.footer-menu-container {
     list-style-type: none;
-    color: #f2f2f2;
+    color: rgb(242, 242, 242);
     font-size: 10px;
 }
-.footer-menu-container a{
+
+.footer-menu-container a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: rgb(242, 242, 242);
     font-size: 16px;
 }
-.menu-item{
+
+.menu-item {
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.6;
+
+    &:hover {
+        opacity: 1;
+    }
 }
-.menu-item:hover{
-    opacity: 1;
-}
-.copy{
+
+.copy {
     color: #f2f2f2;
     opacity: 0.3;
     text-align: center;

@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+
+body {
     background-color: #654f44;
 }
+
 /*--------PRINCIPIO DEL HEATER---------*/
-header{
+header {
     display: flex;
     justify-content: space-around;
     background-color: #bd8a3e;
@@ -17,32 +19,38 @@ header{
     padding: 10px;
     width: 100%;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     color: #292627;
     text-decoration: none;
 }
-.logo img{
+
+.logo img {
     height: 50px;
     margin-right: 10px;
     border-radius: 12px;
 }
-nav a{
+
+nav a {
     color: #292627;
     font-weight: 600;
     padding-right: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+        color: beige;
+        transition: 0.2s;
+    }
 }
- nav a:hover{
-    transform: scale(1.1);
-    color: beige;
-    transition: 0.2s;
-}
-@media screen and (max-width:700px){
-    header{
+
+@media screen and (max-width:700px) {
+    header {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         padding: 10px;
         display: flex;
         justify-content: center;

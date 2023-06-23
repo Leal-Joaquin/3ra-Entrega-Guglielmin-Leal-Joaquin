@@ -1,66 +1,54 @@
-.card{
-    width: 90%;
-    margin: 0 auto;
-    padding: 60px 0;
-    max-width: 1200px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3.5em;
-    flex-wrap: wrap;
-    box-shadow: 0px 1px 10px rgb(0, 0, 0,0.2);
-    transition: all 400 ease;
-}
-.card-item:hover{
-    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.4);
-    transform: translateY(-3%);
-}
-.card-img{
-    width: 100%;
-}
-.card-item{
-    background: #f2f2f2;
-    padding-bottom: 3em;
-    flex-basis: 280px;
-    max-width: 450px;
-    flex-grow: 1;
-    box-shadow: #654f44 0 5px 15px 0;
-}
-.card-content{
-    width: 90%;
-    margin: 0 auto;
-}
-.card-picture{
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    bottom: 2em;
-    border-top: solid 2px #aaaaaa;
-    border-right: solid 2px #aaaaaa;
-    border-left: solid 2px #aaaaaa;
-}
-.card-title{
-    margin-bottom: 1em;
-}
-.card-button{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 15px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400 ease;
-}
-.card-button:hover{
-    transition: 0.2s;
-    background: #45a049;
-    color: #f2f2f2;
-}
-.card-texts{
-    text-align: center;
-}
-.card-paragraph{
-    text-align: center;
+.card {
+    @include card;
+
+
+    .card-img {
+        width: 100%;
+    }
+
+    .card-item {
+        background: rgb(242, 242, 242);
+        padding-bottom: 3em;
+        flex-basis: 280px;
+        max-width: 450px;
+        flex-grow: 1;
+        box-shadow: rgb(101, 79, 68) 0 5px 15px 0;
+
+        &:hover {
+            box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+
+    .card-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-picture {
+        @include card-picture;
+    }
+
+    .card-title {
+        margin-bottom: 1em;
+    }
+
+    .card-button {
+        @include card-button;
+
+        &:hover {
+            transition: 0.2s;
+            background: rgb(69, 160, 73);
+            color: rgb(242, 242, 242);
+        }
+    }
+
+
+    .card-texts {
+        text-align: center;
+    }
+
+    .card-paragraph {
+        text-align: center;
+    }
 }
